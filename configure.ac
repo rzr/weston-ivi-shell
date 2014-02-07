@@ -530,6 +530,8 @@ AC_MSG_RESULT([
 	XWayland			${enable_xwayland}
 	dbus				${enable_dbus}
 
+	ivi-shell			${enable_ivi_shell}
+
 	Build wcap utility		${enable_wcap_tools}
 
 	weston-launch utility		${enable_weston_launch}
