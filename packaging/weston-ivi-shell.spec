@@ -41,7 +41,7 @@ BuildRequires:  libGLU-devel
 BuildRequires:  libXcursor-devel
 %endif
 
-Requires:       weston-startup
+Recommends:       weston-startup
 Requires(pre):  /usr/sbin/groupadd
 
 %if !%{with wayland}
@@ -65,6 +65,8 @@ as a X window manager.
 %package devel
 Summary: Development files for package %{name}
 Group:   Graphics & UI Framework/Development
+Obsoletes: weston-devel
+Provides:  weston-devel
 %description devel
 This package provides header files and other developer releated files
 for package %{name}.
